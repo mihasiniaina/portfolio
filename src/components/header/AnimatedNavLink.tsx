@@ -7,7 +7,7 @@ import {
   startActiveGradientLoop,
   activateEnterAnimation,
   deactivateLeaveAnimation,
-} from '../../animations/navLinkAnimations';
+} from '../../animations/navLink_animations';
 
 interface NavLinkProps {
   label: string;
