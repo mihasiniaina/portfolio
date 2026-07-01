@@ -11,7 +11,7 @@ export default function HeroSection() {
   const restName = nameParts.slice(1).join(" ");
 
   return (
-    <section className="relative min-h-screen bg-[#0D0B1A] font-sans text-[#E2D9F3] overflow-hidden">
+    <section className="relative min-h-screen bg-transparent font-sans text-[#E2D9F3] ">
       
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <div className="absolute -top-28 -left-28 w-[480px] h-[480px] rounded-full bg-[radial-gradient(circle,rgba(124,58,237,0.22)_0%,transparent_70%)] blur-[110px]" />

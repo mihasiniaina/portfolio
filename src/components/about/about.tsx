@@ -117,7 +117,7 @@ export default function AboutSection() {
   const iconGradient = "linear-gradient(90deg, #a855f7, #ec4899, #38bdf8, #a855f7)";
 
   return (
-    <section className="relative bg-[#0D0B1A] font-sans text-[#E2D9F3] px-16 py-24">
+    <section className="relative bg-transparent font-sans text-[#E2D9F3] px-16 py-24">
       <div className="max-w-[1400px] mx-auto">
 
         <span className="inline-block mb-6 px-4 py-1.5 rounded-full text-[0.7rem] font-semibold tracking-[0.18em] uppercase text-[#A78BFA] bg-[#7C3AED]/10 border border-[#7C3AED]/30">

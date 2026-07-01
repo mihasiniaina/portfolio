@@ -8,7 +8,7 @@ import {
 import { FaGithub } from "react-icons/fa";
 import { useCanvasAnimation } from '../../hooks/use_canva_animation';
 import { useHoverAnimation } from '../../hooks/use_hover_animation';
-import { useTranslation } from '../../hooks/use_translation'; // ⚠️ adapte le chemin selon où se trouve le fichier chez toi
+import { useTranslation } from '../../hooks/use_translation';
 import SkillNode from './skill_node';
 import InfoSection from './info_div';
 
@@ -52,11 +52,15 @@ const SkillsSection: React.FC = () => {
   const { hoveredNode, handleMouseEnter, handleMouseLeave } = useHoverAnimation();
 
   return (
-    <section className="relative bg-[#0D0B1A] font-sans text-[#E2D9F3] px-16 py-24 overflow-hidden">
-      <div className="absolute inset-0 " />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(124,58,237,0.1),transparent_70%)]" />
+    <section className="relative bg-transparent font-sans text-[#E2D9F3] px-16 py-24">
       
-      <div className="relative max-w-[1400px] mx-auto">
+      {/* MODIFICATION ICI : Remplacement par un dégradé elliptique très diffus qui meurt à 50% pour ne jamais toucher les bords nets */}
+      <div 
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(124,58,237,0.06)_0%,rgba(0,0,0,0)_50%)]" 
+      />
+      
+      <div className="relative z-10 max-w-[1400px] mx-auto">
 
         <span className="inline-block mb-6 px-4 py-1.5 rounded-full text-[0.7rem] font-semibold tracking-[0.18em] uppercase text-[#A78BFA] bg-[#7C3AED]/10 border border-[#7C3AED]/30 hover:bg-[#7C3AED]/20 transition-all duration-300">
           {t.skills.badge}
@@ -122,7 +126,7 @@ const SkillsSection: React.FC = () => {
               <SkillNode
                 key={node.name}
                 {...node}
-                isHovered={hoveredNode === node.name}
+                isHovered={node.name === hoveredNode}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               />

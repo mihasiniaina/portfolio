@@ -139,7 +139,7 @@ export const translations = {
       placeholderObjective: "Ex: Création d'une API RAG, Application Web...",
       labelDescription: "Description du projet",
       placeholderDescription: "Détaillez brièvement votre besoin, le contexte ou les technologies souhaitées...",
-      send: "Envoyer le message ↗"
+      send: "Envoyer le message"
     }
   },
   en: {
@@ -282,7 +282,7 @@ export const translations = {
       placeholderObjective: "e.g., Building a RAG API, Web Application...",
       labelDescription: "Project Description",
       placeholderDescription: "Briefly detail your needs, the context, or the desired tech stack...",
-      send: "Send message ↗"
+      send: "Send message"
     }
   }
 };

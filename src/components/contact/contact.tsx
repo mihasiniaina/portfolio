@@ -4,7 +4,7 @@ export default function ContactSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative min-h-screen bg-[#0D0B1A] font-sans text-[#E2D9F3] px-6 md:px-16 py-24 overflow-hidden flex items-center">
+    <section className="relative min-h-screen bg-transparent font-sans text-[#E2D9F3] px-6 md:px-16 py-24  flex items-center">
       
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <div className="absolute top-1/3 -right-28 w-[400px] h-[400px] rounded-full bg-[radial-gradient(circle,rgba(124,58,237,0.12)_0%,transparent_70%)] blur-[110px]" />

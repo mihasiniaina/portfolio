@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
 import {Header} from './components/header/Header'
+import Wrapper from './components/background'
 import ProjectsSection from './components/project/project'
 import AboutSection from './components/about/about'
 import SkillsSection from './components/skills/skills'
@@ -17,11 +18,13 @@ createRoot(document.getElementById('root')!).render(
       <ActiveSectionProvider>
       <LanguageProvider>
         <Header></Header>
-        <HeroSection></HeroSection>
-        <AboutSection></AboutSection>
-        <SkillsSection></SkillsSection>
-        <ProjectsSection></ProjectsSection>
-        <ContactSection></ContactSection>
+        <Wrapper>
+          <HeroSection></HeroSection>
+          <AboutSection></AboutSection>
+          <SkillsSection></SkillsSection>
+          <ProjectsSection></ProjectsSection>
+          <ContactSection></ContactSection>
+        </Wrapper>
       </LanguageProvider>
       </ActiveSectionProvider>
     </main>
