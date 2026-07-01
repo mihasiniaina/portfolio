@@ -142,38 +142,17 @@ export default function AboutSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16 text-[0.95rem] leading-[1.8] text-[#9D8EC5]">
           <div className="flex flex-col gap-4">
+            <p>{about.paragraphs.intro}</p>
             <p>
-              Je suis <strong className="text-white">Richarts Mihasiniaina Andrews Ravalo</strong>,
-              développeur fullstack orienté backend, avec une spécialisation forte en{" "}
-              <span className="text-[#A78BFA] font-medium">Python</span> et un goût marqué pour
-              l'<span className="text-[#C4B5FD] font-medium">intelligence artificielle</span>, que
-              j'utilise autant comme domaine d'expertise que comme outil au quotidien dans mon
-              développement.
-            </p>
-            <p>
-              Du backend <span className="text-[#A78BFA]">Python</span> et{" "}
-              <span className="text-[#A78BFA]">Express</span> aux interfaces{" "}
-              <span className="text-[#C4B5FD]">React</span> et{" "}
-              <span className="text-[#C4B5FD]">Next.js</span>, en passant par les bases de
-              données, <span className="text-[#A78BFA]">Docker</span> et le déploiement, je couvre
-              toute la chaîne de production.{" "}
+              {about.paragraphs.chain}{" "}
               <em className="text-[#E2D9F3] not-italic font-medium">
-                Mon approche : du code propre, des solutions créatives, et l'IA comme levier
-                permanent.
+                {about.paragraphs.approach}
               </em>
             </p>
           </div>
 
           <div>
-            <p>
-              Je pratique le <strong className="text-white">vibecoding</strong> et l'
-              <strong className="text-white">IA appliquée au développement</strong> —
-              intégration de modèles, automatisation de workflows — mais aussi les{" "}
-              <strong className="text-[#A78BFA]">LLM appliqués</strong>, en particulier les
-              architectures{" "}
-              <strong className="text-[#C4B5FD]">RAG (Retrieval-Augmented Generation)</strong>{" "}
-              pour construire des assistants intelligents ancrés dans des bases de connaissances.
-            </p>
+            <p>{about.paragraphs.ai}</p>
           </div>
         </div>
 

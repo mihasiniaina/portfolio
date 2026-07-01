@@ -85,16 +85,61 @@ export const translations = {
       ]
     },
     projects: {
-      title: [],
-      viewProject: []
+      badge: "Projets",
+      titleLine1: "Mes",
+      titleLine2: "projets",
+      description: "Une sélection de mes réalisations les plus marquantes et enrichissantes. Chaque application représente un défi technique ciblé, combinant clean code, performance et résolution de problèmes complexes.",
+      viewProject: "Voir le code",
+      privateCode: "Code privé",
+      items: [
+        {
+          id: "safait",
+          title: "SafAIT",
+          desc: "Assistant conversationnel prototypé chez I-Princept, s'appuyant sur une architecture RAG (Retrieval-Augmented Generation) pour l'interrogation sémantique d'archives techniques. Recherche vectorielle via pgvector, conçu comme preuve de concept pour valider la pertinence de l'approche avant passage à l'échelle.",
+          type: "Fullstack",
+          context: "Stage — I-Princept"
+        },
+        {
+          id: "aink",
+          title: "AINK",
+          desc: "Plateforme B2B mettant en relation fournisseurs et collecteurs du secteur agricole, avec messagerie temps réel intégrée. Architecture backend conçue selon les principes de Clean Architecture (séparation des responsabilités par couches) pour garantir maintenabilité et évolutivité du système.",
+          type: "Backend",
+          context: "Personnel"
+        },
+        {
+          id: "izaro",
+          title: "Izar'o",
+          desc: "Réseau social anonyme conçu pour la liberté d'expression, avec une architecture pensée pour garantir la confidentialité des utilisateurs (dissociation identité/contenu). Développé dans le cadre de la compétition interne de LENI Fianarantsoa.",
+          type: "Fullstack",
+          context: "Compétition — LENI Fianarantsoa"
+        },
+        {
+          id: "portfolio",
+          title: "Portfolio",
+          desc: "Site vitrine personnel présentant mon parcours et mes réalisations, avec une attention particulière portée à l'expérience utilisateur : animations fluides, architecture de composants modulaire et code maintenable.",
+          type: "Frontend",
+          context: "Personnel"
+        }
+      ]
     },
     contact: {
-      title: "CONTACT",
-      subtitle: "Une idée de projet ou une question ? N'hésitez pas à me laisser un message.",
-      name: "Nom complet",
-      email: "Adresse e-mail",
-      message: "Message",
-      send: "ENVOYER"
+      badge: "Contact",
+      titleNormal: "Travaillons",
+      titleAccent: "ensemble",
+      description: "Si vous avez trouvé mon profil intéressant, que vous ayez une opportunité précise, un défi technique complexe à relever ou simplement une idée innovante à concevoir, n'hésitez pas à me laisser un message. Discutons-en pour concrétiser vos objectifs.",
+      
+      // Coordonnées factices ajoutées
+      phoneValue: "+261 34 00 000 00",
+      emailValue: "votre.nom@gmail.com",
+      linkedinValue: "linkedin.com/in/votre-nom",
+
+      labelUsername: "Nom d'utilisateur / Nom",
+      placeholderUsername: "Ex: Andrews Richarts",
+      labelObjective: "Objectif",
+      placeholderObjective: "Ex: Création d'une API RAG, Application Web...",
+      labelDescription: "Description du projet",
+      placeholderDescription: "Détaillez brièvement votre besoin, le contexte ou les technologies souhaitées...",
+      send: "Envoyer le message ↗"
     }
   },
   en: {
@@ -183,16 +228,61 @@ export const translations = {
       ]
     },
     projects: {
-      title: [],
-      viewProject: []
+      badge: "Projects",
+      titleLine1: "My",
+      titleLine2: "projects",
+      description: "A selection of my most notable and rewarding work. Each application represents a focused technical challenge, combining clean code, performance and complex problem solving.",
+      viewProject: "View code",
+      privateCode: "Private code",
+      items: [
+        {
+          id: "safait",
+          title: "SafAIT",
+          desc: "Conversational assistant prototyped at I-Princept, built on a RAG (Retrieval-Augmented Generation) architecture for semantic search over technical archives. Vector search powered by pgvector, designed as a proof of concept to validate the approach before scaling.",
+          type: "Fullstack",
+          context: "Internship — I-Princept"
+        },
+        {
+          id: "aink",
+          title: "AINK",
+          desc: "B2B platform connecting suppliers and collectors in the agricultural sector, with built-in real-time messaging. Backend architecture designed around Clean Architecture principles (layered separation of concerns) to ensure maintainability and scalability.",
+          type: "Backend",
+          context: "Personal"
+        },
+        {
+          id: "izaro",
+          title: "Izar'o",
+          desc: "Anonymous social network built around freedom of expression, with an architecture designed to protect user confidentiality (identity/content separation). Built for LENI Fianarantsoa's internal competition.",
+          type: "Fullstack",
+          context: "Competition — LENI Fianarantsoa"
+        },
+        {
+          id: "portfolio",
+          title: "Portfolio",
+          desc: "Personal showcase site presenting my background and work, with close attention to user experience: smooth animations, modular component architecture and maintainable code.",
+          type: "Frontend",
+          context: "Personal"
+        }
+      ]
     },
     contact: {
-      title: "CONTACT",
-      subtitle: "Have a project idea or a question? Feel free to leave me a message.",
-      name: "Full Name",
-      email: "Email Address",
-      message: "Message",
-      send: "SEND"
+      badge: "Contact",
+      titleNormal: "Let's work",
+      titleAccent: "together",
+      description: "If you found my profile interesting, whether you have a specific opportunity, a complex technical challenge to solve, or simply an innovative idea to design, feel free to leave me a message. Let's discuss it to turn your goals into reality.",
+      
+      // Coordonnées factices ajoutées
+      phoneValue: "+261 34 00 000 00",
+      emailValue: "your.name@gmail.com",
+      linkedinValue: "linkedin.com/in/your-name",
+
+      labelUsername: "Username / Name",
+      placeholderUsername: "e.g., Andrews Richarts",
+      labelObjective: "Objective",
+      placeholderObjective: "e.g., Building a RAG API, Web Application...",
+      labelDescription: "Project Description",
+      placeholderDescription: "Briefly detail your needs, the context, or the desired tech stack...",
+      send: "Send message ↗"
     }
   }
 };

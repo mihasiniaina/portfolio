@@ -2,8 +2,10 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
 import {Header} from './components/header/Header'
+import ProjectsSection from './components/project/project'
 import AboutSection from './components/about/about'
 import SkillsSection from './components/skills/skills'
+import ContactSection from './components/contact/contact'
 import HeroSection from './components/hero/hero'
 import {ActiveSectionProvider} from './context/header_active_section_context'
 import {LanguageProvider} from './context/langage_context'
@@ -18,6 +20,8 @@ createRoot(document.getElementById('root')!).render(
         <HeroSection></HeroSection>
         <AboutSection></AboutSection>
         <SkillsSection></SkillsSection>
+        <ProjectsSection></ProjectsSection>
+        <ContactSection></ContactSection>
       </LanguageProvider>
       </ActiveSectionProvider>
     </main>
